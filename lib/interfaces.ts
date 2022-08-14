@@ -47,3 +47,10 @@ export interface Account {
   };
   companies: Company[];
 }
+export interface HeaderProps {
+  links: {
+    category: string;
+    linkList: { link: string; label: string; icon: any }[];
+  }[];
+  isSignedIn: boolean;
+}
